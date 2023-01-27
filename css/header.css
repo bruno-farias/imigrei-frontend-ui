@@ -1,0 +1,144 @@
+/*------------------------------
+ --------  HEADER -------------
+ -------------------------- */
+
+header {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: center;
+  background-color: var(--third-color);
+}
+
+.navbar {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  height: 80px;
+  width: 100%;
+  flex-wrap: wrap;
+  max-width: 1000px;
+}
+
+.nav-menu li:nth-child(1) a {
+  color: #11569e;
+  text-decoration: underline;
+}
+
+.navbar .logo {
+  width: 193px;
+  height: 34.72px;
+}
+
+.iconnav {
+  width: 193px;
+  height: 34.72px;
+  top: 38px;
+  margin-left: 100px;
+}
+
+.nav-menu {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.nav-link {
+  color: var(--second-color);
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 500;
+  padding: 8px 15px;
+  border-radius: 5px;
+  letter-spacing: 1px;
+}
+
+.navbar .subactive {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  display: none;
+}
+
+.nav-buttom {
+  height: 36px;
+  width: 209px;
+  background-color: var(--second-color);
+}
+
+.cta-button-a a {
+  color: white;
+  font-family: var(--ff-1);
+  font-weight: 400;
+  font-size: 16px;
+}
+
+.hamburguer {
+  display: none;
+  cursor: pointer;
+  margin-right: 50px;
+}
+
+.bar {
+  display: block;
+  width: 28px;
+  height: 3px;
+  border-radius: 2px;
+  margin: 5px auto;
+  background-color: var(--second-color);
+}
+
+/*-----@MEDIA HEADER ----*/
+@media (max-width: 800px) {
+  .linha-horizontal {
+    width: 480px;
+    border: 1px solid var(--third-color);
+  }
+
+  .hamburguer {
+    display: block;
+    cursor: pointer;
+    margin-right: 50px;
+  }
+
+  .hamburguer.active .bar:nth-child(2) {
+    opacity: 0;
+  }
+
+  .hamburguer.active .bar:nth-child(1) {
+    transform: translate(0px) rotate(45deg);
+    margin: -8px;
+  }
+
+  .hamburguer.active .bar:nth-child(3) {
+    transform: translate(0px) rotate(-45deg);
+    margin: -8px;
+  }
+
+  .nav-menu {
+    position: absolute;
+    left: -100%;
+    top: 100px;
+    gap: 0;
+    background-color: #f5f5f5;
+    text-align: left;
+    flex-direction: column;
+    width: 100%;
+    transition: 0.3s;
+    z-index: 999;
+  }
+
+  .nav-item {
+    margin: 20px 0;
+    text-align: start;
+  }
+
+  .nav-item a {
+    margin: 16px 0;
+  }
+
+  .nav-menu.active {
+    left: 0;
+  }
+}

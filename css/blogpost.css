@@ -1,0 +1,22 @@
+:root {
+  --primary-color: #1d1d1d;
+  --second-color: #1e5720;
+  --third-color: #e3f1e4;
+  --fourth-color: #777777;
+  --fifth-color: #f5c731;
+  --sixth-color: #11569e;
+  --seventh-color: #d9d9d9;
+  --eighth-color: #8f2929;
+
+  /* title */
+  --ff-1: 'Space Grotesk', Sans-serif;
+  /* max-width */
+  --mx-wid: 1000px;
+}
+
+@media (max-width: 800px) {
+  :root {
+    /* max-width */
+    --mx-wid: 100%;
+  }
+}
