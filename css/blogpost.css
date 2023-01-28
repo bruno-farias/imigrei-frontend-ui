@@ -35,7 +35,13 @@
 .bp1-main {
   display: flex;
   flex-direction: row;
-  padding: 2rem;
+}
+
+.bp1-main {
+  gap: 10px;
+}
+.bp1-group1 {
+  width: 70%;
 }
 .breadcrump ul {
   display: flex;
@@ -101,10 +107,91 @@
   .bp1-group2 {
     display: none;
   }
+  .bp1-group1 {
+    width: 100%;
+  }
+  .bp1-info {
+    flex-wrap: wrap;
+  }
+  .bp1-main {
+    padding: 10px;
+  }
+  .bp1-hero img {
+    width: 100%;
+  }
+  .bp1-hero .img-desc {
+    margin-bottom: 20px;
+  }
+  .bp1-list li img {
+    width: 100%;
+  }
 }
 /*---------------------------------------------------
 -----------------   BP2 --------------------------- 
 ------------------------------------------------------*/
+.review-stars h4 {
+  font-size: 26px;
+  font-weight: 600;
+  color: var(--second-color);
+}
+.bp2-section {
+  display: flex;
+  justify-content: center;
+  margin-top: 8rem;
+}
+.bp2-container {
+  max-width: var(--mx-wid);
+}
+.reviews-details {
+  width: 600px;
+  background-color: #fafafa;
+}
+.reviews-summary {
+}
+.user-review {
+  display: flex;
+  flex-direction: column;
+  margin-top: 18px;
+}
+.user {
+  display: flex;
+  flex-direction: row;
+}
+.user-desc {
+  display: flex;
+  flex-direction: column;
+}
+.user img {
+  width: 80px;
+  height: 80px;
+}
+.user-desc .title {
+  font-size: 24px;
+  padding-top: 16px;
+  padding-left: 10px;
+}
+.user-desc .content {
+  padding-left: 10px;
+}
+.commentary {
+  margin-top: 18px;
+}
+.checked {
+  color: orange;
+}
+.review-stars {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.review-stars .stars {
+  margin-left: 10px;
+}
+@media (max-width: 800px) {
+  .reviews-details {
+    width: 320px;
+  }
+}
 /*---------------------------------------------------
 -----------------   BP3 --------------------------- 
 ------------------------------------------------------*/

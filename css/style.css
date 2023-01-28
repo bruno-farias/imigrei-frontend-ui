@@ -117,7 +117,18 @@ p {
 .cta-wit:hover {
   background-color: var(--second-color);
 }
-
+.cta-button-cat {
+  display: flex !important;
+  justify-content: center !important;
+}
+.cta-cat {
+  display: flex;
+  justify-content: center;
+  margin-top: 7rem;
+}
+.home7-img img {
+  transform: translateY(14px);
+}
 @media (max-width: 800px) {
   .title {
     align-self: center;

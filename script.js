@@ -23,3 +23,12 @@ for (i = 0; i < links.length; i++) {
     hamburguer.classList.toggle('active')
   }
 }
+
+// FILTERS BLOG CATEGORY
+
+var filter = document.querySelector('.hidden-filter')
+var filterButton = document.querySelector('.filter')
+
+filterButton.addEventListener('click', () => {
+  filter.classList.toggle('block')
+})
