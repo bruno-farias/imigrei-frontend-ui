@@ -296,3 +296,6 @@
     display: none;
   }
 }
+.header .menu ul li:nth-child(6) a:hover {
+  background-color: transparent !important;
+}
