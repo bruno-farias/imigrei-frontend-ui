@@ -67,10 +67,15 @@
   display: flex;
   flex-direction: column;
 }
+.know-services-pt .title {
+  font-size: 39px;
+  color: var(--second-color);
+}
 
 .know-services-pt p {
   max-width: 78%;
-  margin-top: 24px;
+  margin-top: 20px;
+  font-size: 16px;
 }
 .banners-pt {
   width: 80%;
@@ -98,8 +103,8 @@
     text-align: center;
   }
   .banners-pt img {
-    width: 100%;
-    height: 90%;
+    width: 300px;
+    height: 173px;
     margin-left: 50px;
   }
 
@@ -113,12 +118,25 @@
   .title::after {
     display: none;
   }
+  .pt1-container {
+    height: 470px;
+  }
 }
+/* @media (max-width: 425px) {
+  .banners-pt img {
+    width: 300px;
+    height: 243px;
+    margin-left: 50px;
+  }
+} */
 
 /*-------Cidadania Portuguesa-----
 -------------pt2-container-----*/
 .home2-container {
-  background-color: #fafafa;
+  /* background-color: #fafafa; */
+}
+.pt2 {
+  background-color: white !important;
 }
 .home-about-pt {
   justify-content: center;
@@ -298,7 +316,7 @@ summary::after {
   display: inline-block;
   transition: 0.2s;
   content: '';
-  background-image: url(./../img/pt/minus-square.png);
+  background-image: url(./../img/svg/minus-square.svg);
   background-size: cover;
   height: 25px;
   width: 28px;
@@ -309,7 +327,7 @@ details[open] summary::after {
   display: inline-block;
   transition: 0.2s;
   content: '';
-  background-image: url(./../img/pt/plus-square.png);
+  background-image: url(./../img/svg/plus-square.svg);
   background-size: cover;
   height: 25px;
   width: 28px;
@@ -357,3 +375,10 @@ details[open] summary::after {
 
 /*-------Cidadania Portuguesa-----
 -------------pt7-container-----*/
+.home-about {
+  background-color: #fafafa;
+  padding: 10px;
+}
+.pt1 {
+  background-position-x: right;
+}

@@ -98,8 +98,11 @@
   margin-top: 20px;
 }
 .bg2-box2 {
-  border-bottom: 1px solid var(--fourth-color);
   padding-bottom: 10px;
+}
+.bg2-box2 li {
+  border-bottom: 1px solid var(--fourth-color);
+  padding-bottom: 15px;
 }
 @media (max-width: 800px) {
   .bg2-main {
@@ -159,4 +162,10 @@
 .bg-time span {
   margin-left: 9px;
   font-size: 14px;
+}
+@media (max-width: 800px) {
+  .banners-bg .know-services-banner {
+    width: 300px !important;
+    height: 265px !important;
+  }
 }

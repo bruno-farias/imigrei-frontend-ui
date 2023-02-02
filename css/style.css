@@ -24,6 +24,7 @@
 
   /* title */
   --ff-1: 'Space Grotesk', Sans-serif;
+
   /* max-width */
   --mx-wid: 1000px;
 }
@@ -88,7 +89,7 @@ p {
 .content {
   font-family: var(--ff-1);
   font-weight: 400;
-  font-size: 16px;
+  font-size: 14px;
 }
 
 .cta-button {
@@ -276,10 +277,6 @@ p {
   .home2-container {
     flex-direction: column-reverse;
     height: 100%;
-  }
-
-  .img-about-home img {
-    width: 100%;
   }
 
   .home-about .content {
@@ -602,5 +599,33 @@ p {
 
   .home7-form-total {
     width: auto;
+  }
+}
+
+.home-1 {
+  align-items: center;
+}
+.banners {
+  display: flex;
+  justify-content: center;
+}
+@media (max-width: 800px) {
+  .img-about-home {
+    display: flex;
+    justify-content: center;
+  }
+  .img-about-home img {
+    width: 400px;
+  }
+}
+@media (max-width: 425px) {
+  .img-about-home img {
+    width: 300px;
+  }
+}
+@media (max-width: 425px) {
+  .header .menu ul li:nth-child(1) a {
+    text-decoration: none;
+    color: var(--second-color);
   }
 }

@@ -26,7 +26,7 @@
 -------------------------------------------------------------*/
 .it1 {
   background-image: url(./../img/it/it4bg.png);
-  background-size: cover;
+  background-size: auto;
   background-repeat: no-repeat;
   display: flex;
   justify-content: center;
@@ -34,6 +34,15 @@
 /*-----------------------------------------------------------
 ------------------------ IT 2 -------------------------------
 -------------------------------------------------------------*/
+.title10::after {
+  content: '';
+  display: inline-block;
+  background-image: url('./../img/icon/🇮🇹.png');
+  background-size: cover;
+  height: 25px;
+  width: 28px;
+  margin-left: 2rem;
+}
 
 /*-----------------------------------------------------------
 ------------------------ IT 3 -------------------------------
@@ -44,4 +53,16 @@
 -------------------------------------------------------------*/
 .it4-img {
   background-color: var(--second-color) !important;
+}
+.banners-it img {
+  width: 300px !important;
+  height: 223px !important;
+}
+@media (max-width: 800px) {
+  .it1 {
+    background-color: var(--third-color) !important;
+  }
+  .banners-it img {
+    height: 100%;
+  }
 }

@@ -26,7 +26,7 @@
 .bg-ct-section {
   display: flex;
   justify-content: center;
-  background-image: linear-gradient(to bottom, #e3f1e4 40%, white 10%);
+  background-image: linear-gradient(to bottom, #e3f1e4 20%, white 10%);
   background-size: cover;
   margin-bottom: 8rem;
   margin-top: 2rem;
@@ -159,4 +159,28 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
+}
+
+.sum::after {
+  margin-right: 0px;
+  display: inline-block;
+  transition: 0.2s;
+  content: '';
+  background-image: url(./../img/icon/Vector\ 8.png);
+  background-size: cover;
+  height: 10px;
+  width: 14px;
+  transform: translateX(-10px) !important;
+}
+
+details[open] .sum::after {
+  margin-left: 0ch;
+  display: inline-block;
+  transition: 0.2s;
+  content: '';
+  background-image: url(./../img/icon/Vector\ 2.png) !important;
+  background-size: cover;
+  height: 10px !important;
+  width: 14px !important;
+  transform: translateX(-10px) !important;
 }
