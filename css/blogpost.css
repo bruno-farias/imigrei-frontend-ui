@@ -145,8 +145,7 @@
   width: 600px;
   background-color: #fafafa;
 }
-.reviews-summary {
-}
+
 .user-review {
   display: flex;
   flex-direction: column;

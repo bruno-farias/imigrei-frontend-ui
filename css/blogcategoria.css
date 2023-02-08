@@ -184,3 +184,15 @@ details[open] .sum::after {
   width: 14px !important;
   transform: translateX(-10px) !important;
 }
+/* .filter-ul li input:checked {
+  border-color: red !important;
+  background-color: red !important;
+  color: var(--eighth-color) !important;
+} */
+/* 
+[type='checkbox']:checked {
+  background-color: red;
+}
+input[type='checkbox' i]:checked {
+  background-color: red;
+} */
