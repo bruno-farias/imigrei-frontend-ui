@@ -13,9 +13,9 @@
   /* max-width */
   --mx-wid: 1000px;
 }
-.title55{
+.title55 {
   font-size: 40px;
-  color: var(--eighth-color)!important;
+  color: var(--eighth-color) !important;
 }
 @media (max-width: 800px) {
   :root {
@@ -72,7 +72,17 @@
   .vt4-list {
     flex-direction: row;
   }
-  
+}
+@media (max-width: 376px) {
+  .banners-pt3 img {
+    height: 193px !important;
+  }
+}
+@media (max-width: 321px) {
+  .banners-pt3 img {
+    height: 173px !important;
+  }
+}
 /*--------------------------------------
 ----------------VISTOS 3------------------
 ---------------------------------------  */
@@ -80,3 +90,16 @@
 /*--------------------------------------
 ----------------VISTOS 4------------------
 ---------------------------------------  */
+.pt4-explanation {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+@media (max-width: 800px) {
+  .pt4-explanation .back-arrow {
+    display: none;
+  }
+  .pt4-explanation .front-arrow {
+    display: none;
+  }
+}

@@ -278,7 +278,7 @@
 @media (max-width: 800px) {
   .header input[type='text']:is(:focus, :active) {
     width: 160px;
-    transform: translate(40px, 0px);
+    transform: translate(-60px, 0px);
   }
   .menu ul li:hover ul {
     margin-left: 40px;
@@ -321,7 +321,10 @@
 
 @media (max-width: 425px) {
   .hamburguer {
-    transform: translateX(30px);
+    transform: translateX(50px);
+  }
+  .logo {
+    max-width: 80px;
   }
 }
 .header .menu ul li:nth-child(6) a:hover {
