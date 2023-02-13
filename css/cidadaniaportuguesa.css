@@ -342,7 +342,7 @@ summary::after {
   display: inline-block;
   transition: 0.2s;
   content: '';
-  background-image: url(./../img/svg/minus-square.svg);
+  background-image: url(./../img/svg/plus-square.svg);
   background-size: cover;
   height: 25px;
   width: 28px;
@@ -353,7 +353,7 @@ details[open] summary::after {
   display: inline-block;
   transition: 0.2s;
   content: '';
-  background-image: url(./../img/svg/plus-square.svg);
+  background-image: url(./../img/svg/minus-square.svg);
   background-size: cover;
   height: 25px;
   width: 28px;
